@@ -1,5 +1,5 @@
-import { Chat } from "@/components/component/chat"; // Import the correct component name
+import { Chat } from "@/components/component/chat";
 
 export default function MyChat() {
-    return <Chat />; // Use the component as a JSX element
+  return <Chat />;
 }

@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# GameStoryBot
 
-## Getting Started
+## How to run?
 
-First, run the development server:
+### STEPS:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository  
+   Project repo: [https://github.com/orgs/Chatbot-DL/repositories](https://github.com/orgs/Chatbot-DL/repositories)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Create an environment after opening the repository:
+   ```bash
+   py -m env venv
+   venv\Scripts\activate
+   
+## install the requirements
+pip install -r requirements.txt
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Download the quantize model from the link provided in this model folder & keep the model in this directory:
+## Download the Llama 2 Model:
+GameStory-Chatboot2-unsloth.Q8_0.gguf
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## From the following link:
+https://huggingface.co/Chatbot-DL/GameStory-Chatboot2/tree/main
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## install ollama desktop :
+You need to convert the fine-tuned model via llama.cpp, and write a Model File to use the converted model.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```ini
+ollama serve
 
-## Deploy on Vercel
+##creat the ollama model:
+ollama create chatboot-game  -f <Modelfile path>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
